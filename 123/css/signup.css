@@ -1,5 +1,5 @@
 body{
-    background: url('/image/backgroud.jpg');
+    background: url('/123/image/backgroud.jpg');
     background-size: cover;  
 }
 #container{
@@ -130,5 +130,15 @@ body{
 }
 .form-submit:hover{
     border: 1px solid #7cb0f0;
+    cursor: pointer;
+}
+.login-link{
+    background: transparent;
+    color: #fff;
+    padding: 6px 10px;
+    margin-bottom: auto;
+    text-decoration: none;
+}
+.login-link{
     cursor: pointer;
 }

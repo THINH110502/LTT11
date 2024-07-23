@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    />
+</head>
+<body>
+   <header>
+    <div class="logo">
+        <img src="image/logo.4.jpg">
+    </div>
+    <div class="menu">
+        <li><a href="">Nữ</a>
+            <ul class="sub-menu">
+                <li><a href="">Hàng mới về</a></li>
+                <li><a href="">Coolection</a></li>
+                <li><a href="">Áo</a>
+                    <ul>
+                        <li><a href="">Áo sơ mi</a></li>
+                        <li><a href="">Áo thun</a></li>
+                        <li><a href="">Áo Khoác</a></li>
+                        <li><a href="">Áo len</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Quần</a>
+                    <ul>
+                        <li><a href="">Quần dày</a></li>
+                        <li><a href="">Quần lửng</a></li>
+                        <li><a href="">Quần kaki</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li><a href="">Nam</a></li>
+        <li><a href="">Trẻ em</a></li>
+        <li><a href="">Sale</a></li>
+        <li><a href="">Khẩu Trang</a></li>
+        <li><a href="">Bộ sưu tập</a></li>
+        <li><a href="">Thông tin</a></li>
+    </div>
+    <div class="other">
+        <li><input placeholder="Tìm kiếm" type="text"> <i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><a class="fa-solid fa-paw" href=""></a></li>
+        <li><a class="fa-solid fa-user" href=""></a></li>
+        <li><a class="fa-solid fa-bag-shopping" href=""></a></li>
+    </div>
+   </header>
+   <section id="backgroud">
+    <div class="aspect-ratio-169">
+        <img src="image/backgroud.jpg">
+        <img src="image/backgroud1.jpg">
+        <img src="image/backgroud2.jpg">
+        <img src="image/backgroud3.jpg">
+        <img src="image/backgroud4.jpg">
+    </div>
+    <div class="dot-container">
+        <div class="dot active" ></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+   </section>
+</body>
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector(".aspect-ratio-169")
+    const dotItem = document.querySelectorAll(".dot")
+    let imgNumber = imgPosition.length
+    let index = 0
+    imgPosition.forEach(function(images,index){
+        images.style.left = index*100 + "%"
+        dotItem[index].addEventListener("click",function(){
+            backgroud(index)
+        })
+    })
+    function imgBackgroud (){
+        index++;
+        if (index >=imgNumber){
+            index = 0
+        }
+        backgroud(index)
+    }
+    function backgroud (index){
+        imgContainer.style.left = "-" +index*100+ "%"
+        const dotActive = document.querySelector(".active")
+        dotActive.classList.remove("active")
+        dotItem[index].classList.add("active")
+    }
+
+    setInterval(imgBackgroud, 5000)
+</script>
+</html>
