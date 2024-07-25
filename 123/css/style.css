@@ -18,7 +18,6 @@ li{
 a{
     text-decoration: none;
     color: #000;
-    text-transform: uppercase;
 }
 
 header{
@@ -360,4 +359,96 @@ footer{
 .product-content-right{
     width: 50%;
     padding-left: 20px;
+}
+.product-content-right-name h1{
+    font-family: var(--main-text-font);
+    font-size: 16px;
+}
+.product-content-right-name p{
+    color: #cccccc;
+    font-size: 12px;
+}
+.product-content-right-price{
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.product-content-right-color img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.product-content-right-color-img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+}
+.size span{
+    display: inline-block;
+    padding: 3px 6px;
+    border: 1px solid #dddddd;
+    margin: 12px 10px 12px 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.quantily{
+    display: flex;
+    margin-bottom: 20px;
+}
+.quantily input{
+    width: 35px;
+    padding-left: 3px;
+}
+.product-content-right-button button{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px 0 12px 0;
+    transition: all 0.3s ease;
+}
+.product-content-right-button button:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.product-content-right-button button:first-child:hover{
+    background: black;
+    color: #ccc;
+}
+.product-content-right-button button:last-child{
+    background-color: #ffffff;
+    border: 2px solid rgb(206, 168, 0);
+    color: rgb(206, 168, 0);
+    cursor: pointer;
+}
+.product-content-right-button button:last-child:hover{
+    background: rgb(206, 168, 0);
+    color: #000000;
+}
+.product-content-right-icon{
+    display: flex;
+}
+.product-content-right-icon-item{
+    display: flex;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+.product-content-right-icon-item i{
+    font-size: 12px;
+    margin-right: 6px;
+}
+.product-content-right-QR{
+    margin: 20px 0;
+}
+.product-content-right-QR img{
+    max-width: 70px;
 }
