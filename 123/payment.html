@@ -54,15 +54,15 @@
    <!-- -------------------------------------Payment----------------------------------------------------------------- -->
 <section class="payment">
     <div class="container">
-        <div class="pa-top-warp">
+        <div class="payment-top-warp">
             <div class="delivery-top">
-                <div class="payment-top-item delivery-top-delivery">
+                <div class="payment-top-item payment-top-delivery">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </div>
-                <div class="payment-top-item delivery-top-adress">
+                <div class="payment-top-item payment-top-adress">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <div class="payment-top-item delivery-top-payment">
+                <div class="payment-top-item payment-top-payment">
                     <i class="fa-solid fa-money-check"></i>
                 </div>
             </div>
@@ -97,11 +97,37 @@
                         <label for="">Thanh toán bằng Momo</label>
                     </div>
                     <div class="payment-content-left-method-payment-item">
-                        <input name="method-payment" type="radio">
+                        <input name="method-payment" type="radio">  
                         <label for="">Thanh toán khi nhận hàng</label>
                     </div>
                 </div>
+                <div class="paymet-content-left-button row">
+                    <a href=""><span>&#171;</span><p style="color: blue;">Quay lại</p></a>
+                </div>
             </div>
+            <div class="payment-content-right">
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã cộng tác viên">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-mnv">
+                    <select name="" id="">
+                        <option value="">Chọn mã nhân viên thân thiết</option>
+                        <option value="">D123</option>
+                        <option value="">A23</option>
+                        <option value="">B153</option>
+                        <option value="">C234</option>
+                        <option value="">G535</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="payment-content-right-payment">
+            <button>TIẾP TỤC THANH TOÁN</button>
         </div>
     </div>
 </section>
