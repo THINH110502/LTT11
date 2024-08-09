@@ -1,12 +1,15 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let items = document.querySelectorAll('#auto-slider .item');
-    let currentIndex = 0;
-    let intervalTime = 4000;
-    function showNextItem() {
-        items[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % items.length;
-        items[currentIndex].classList.add('active');
-    }
-    items[currentIndex].classList.add('active');
-    setInterval(showNextItem, intervalTime);
+let searchBtn = document.querySelector('#search-btn');
+let searchBar = document.querySelector('.search-bar-container');
+let formClose = document.querySelector('#form-close');
+let menu = document.querySelector('#menu-bar');
+
+
+menu.addEventListener('click', () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+});
+
+searchBtn.addEventListener('click', () =>{
+    searchBtn.classList.toggle('fa-times');
+    searchBar.classList.toggle('active');
 });
