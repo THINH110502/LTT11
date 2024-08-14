@@ -32,10 +32,25 @@
             <input type="search" id="search-bar" placeholder="Search...">
             <label for="search-bar" class="fas fa-search"></label>
         </form>
+        <div class="login-form-container">
+
+            <i class="fas fa-times" id="form-close"></i>
+        
+            <form action="">
+                <h3>login</h3>
+                <input type="email" class="box" placeholder="Nhập email">
+                <input type="password" class="box" placeholder="Nhập password">
+                <input type="submit" value="Đăng nhập" class="btn">
+                <input type="checkbox" id="remember">
+                <label for="remember">remember me</label>
+                <p>Quên password? <a href="#">click here</a></p>
+                <p>Chưa có tài khoản? <a href="#">register now</a></p>
+            </form>
+        </div>
     </header>
 
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="container">
             <h3>adventure is worthwhile</h3>
             <p>dicover new places with us, adventure awaits</p>
@@ -46,12 +61,17 @@
             <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
         </div>
 
-        <div class="container-video-controls">
-
+        <div class="controls">
+            <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="img/vid-5.mp4"></span>
         </div>
+        
     </section>
 
-    <section class="book">
+    <section class="book" id="book">
         <h1 class="heading">
             <span>B</span>
             <span>O</span>
@@ -88,7 +108,7 @@
     </section>
 
 
-    <section class="packages">
+    <section class="packages" id="packages">
         <h1 class="heading">
             <span>P</span>
             <span>A</span>
@@ -206,7 +226,7 @@
         </div>
     </section>
     
-    <section class="services">
+    <section class="services" id="services">
         <h1 class="heading">
             <span>S</span>
             <span>E</span>
@@ -252,7 +272,7 @@
     </section>
 
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h1 class="heading">
             <span>G</span>
             <span>A</span>
@@ -265,81 +285,81 @@
         <div class="container-box">
             <div class="box">
                 <img src="img/g-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="#" class="btn">see more</a>
+                </div>
             </div>
             <div class="box">
                 <img src="img/g-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
             </div>
             <div class="box">
                 <img src="img/g-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">s
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
             </div>
             <div class="box">
                 <img src="img/g-4.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
             </div>
             <div class="box">
                 <img src="img/g-5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
             </div>
             <div class="box">
                 <img src="img/g-6.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
             </div>
             <div class="box">
                 <img src="img/g-7.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
-            </div>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
+            </div>         
             <div class="box">
                 <img src="img/g-8.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
-            </div>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
+            </div>      
             <div class="box">
                 <img src="img/g-9.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
-                <a href="$" class="btn">See More</a>
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    <a href="$" class="btn">See More</a>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <section class="review">
+    <section class="review" id="review">
         <h1 class="heading">
             <span>R</span>
             <span>E</span>
@@ -362,8 +382,6 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
-            </div>
-            <div class="review-wapper">
                 <div class="review-slider">
                     <img src="img/pic2.png" alt="">
                     <h3>john deo</h3>
@@ -376,8 +394,6 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
-            </div>
-            <div class="review-wapper">
                 <div class="review-slider">
                     <img src="img/pic3.png" alt="">
                     <h3>john deo</h3>
@@ -390,8 +406,6 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
-            </div>
-            <div class="review-wapper">
                 <div class="review-slider">
                     <img src="img/pic4.png" alt="">
                     <h3>john deo</h3>
@@ -404,12 +418,12 @@
                         <i class="fa-regular fa-star"></i>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1 class="heading">
             <span>C</span>
             <span>O</span>
@@ -442,7 +456,6 @@
     </section>
 
     <section class="container-brand">
-        <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="img/1.jpg" alt="">
@@ -463,14 +476,11 @@
                     <img src="img/6.jpg" alt="">
                 </div>
             </div>
-        </div>
     </section>
 
 
     <section class="footer">
-
         <div class="box-container">
-    
             <div class="box">
                 <h3>about us</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
@@ -498,12 +508,9 @@
                 <a href="#">instagram</a>
                 <a href="#">twitter</a>
                 <a href="#">link</a>
-            </div>
-    
-        </div>
-    
-        <h1 class="credit"> created by <span> LTT </span> | all rights reserved! </h1>
-    
+            </div>  
+        </div> 
+        <h1 class="credit"> created by <span> LTT </span> | all rights reserved! </h1>   
     </section>
 
 </body>

@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(202, 200, 97);
+}
+
+.container-music{
+    width: 400px;
+    height: 500px;
+    background: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* .container-music .container{
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+} */
+
+.container-music .container .thumbnail-song img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+}
